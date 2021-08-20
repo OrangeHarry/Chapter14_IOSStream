@@ -1,0 +1,6 @@
+id = call1212
+eng_name = Harry
+#kor_name = ÇÏÇå¹Î
+kor_name = ¿À·»Áö
+data = 80,90,95
+c:/Temp
