@@ -12,7 +12,7 @@ public class ReaderExample2 {
 
 		Reader reader = new FileReader(path);
 
-		int readCharNum = reader.read(buffer, 2, 3);
+		int readCharNum = reader.read(buffer, 2, 3);//인덱스 2번부터 3개읽어라
 		if (readCharNum != -1)
 			for (int i = 0; i < buffer.length; i++) {
 				System.out.println(buffer[i]);// 그냥 읽으면 숫자가 찍히니 문자값으로 디코딩

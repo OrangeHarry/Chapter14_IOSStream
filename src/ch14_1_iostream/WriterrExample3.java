@@ -13,7 +13,7 @@ public class WriterrExample3 {
 
 		Writer writer = new FileWriter(path);
 
-		writer.write(array, 1, 3); //배열의 1번인덱스 부터 3번 인덱스까지
+		writer.write(array, 1, 3); //배열의 1번인덱스 부터 3개를 출력
 
 		writer.flush();
 		writer.close();

@@ -1,7 +1,6 @@
 package ch14_2_assistant_stream;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -32,6 +31,7 @@ public class CharacterConvertStreamExample {
 		Reader reader = new InputStreamReader(fis);
 		
 		char[] buffer = new char[100];
+//		char[] buffer = new char[4]; 이러면 4개의 인덱스값까지 밖에 못읽네ㅋㅋㅋ
 		int readCharNum = reader.read(buffer); //InputStreamWriter 보조 스트림을 이용해서 문자출력
 		reader.close();          
 		String data = new String(buffer, 0, readCharNum);//char배열에서 읽은 수만큼 문자열로 변환

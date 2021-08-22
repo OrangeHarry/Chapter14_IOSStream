@@ -2,7 +2,6 @@ package ch14_2_assistant_stream;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ import java.util.List;
 
 public class BoardUtil {
 
-	List<Board> list;
+	private List<Board> list;
 
 	public BoardUtil() {
 		list = new ArrayList<>();
@@ -28,7 +27,7 @@ public class BoardUtil {
 		String path = "C:/Temp/boardClass.db";
 		try {
 			FileOutputStream fos = new FileOutputStream(path); //파일을 만들어
-			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			ObjectOutputStream oos = new ObjectOutputStream(fos); //보조스트림을 꽂아
 
 			oos.writeObject(list); //내용에 list를 저장해
 

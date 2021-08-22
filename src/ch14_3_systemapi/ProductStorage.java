@@ -52,7 +52,7 @@ public class ProductStorage {
 
 	public void showProducts() {
 		for (Product p : list) {
-			System.out.println(p.getPno() + "\t" + p.getName() + "\t" + p.getPrice() + "\t" + p.getStock());
+			System.out.println(p.getPno() + "¹ø »óÇ° : " + p.getName() + ",\t" + p.getPrice() + ",\t" + p.getStock());
 		}
 	}
 }
